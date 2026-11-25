@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "coverageDate": "2026-11-23",
+  "coverageDate": "2026-11-25",
   "scope": "One Douglas County planning case and one draft source.",
-  "licenseStatus": "Proposed CC0-1.0 for original index contributions only, pending owner approval. No dedication is made by this export.",
+  "licenseStatus": "CC0-1.0 for original factual index contributions where the project holds rights. https://creativecommons.org/publicdomain/zero/1.0/",
   "thirdPartyExclusions": "County documents, logos and other third-party material are excluded.",
   "cases": [
     {
@@ -19,12 +19,12 @@
       "listingUrl": "https://douglascountyga.gov/292/Planning-Zoning-Board",
       "documentDate": "2026-06-02",
       "meetingDate": "2026-07-07",
-      "retrievedAt": "2026-11-23",
+      "retrievedAt": "2026-11-25",
       "status": "draft",
       "recordType": "Zoning agenda",
       "reviewState": "source_matched",
-      "reviewer": "Codex (AI-assisted source comparison)",
-      "reviewDate": "2026-11-23",
+      "reviewer": "Codex (original PDF comparison)",
+      "reviewDate": "2026-11-25",
       "ownerReview": "pending",
       "reuseNotes": "Link only. Third-party PDF excluded from downloads and any project license."
     }
@@ -104,6 +104,30 @@
       "locator": "Page 1, Agenda, East Village Dothan item",
       "state": "proposed",
       "notes": "",
+      "version": 1
+    },
+    {
+      "id": "east-village-dothan-lotSize",
+      "caseId": "east-village-dothan",
+      "field": "lotSize",
+      "value": 703,
+      "unit": "acres",
+      "sourceId": "draft-zoning-2026-07-07",
+      "locator": "Page 1, Agenda, East Village Dothan item, Lot size line",
+      "state": "documented",
+      "notes": "Lot size as reported in the draft agenda.",
+      "version": 1
+    },
+    {
+      "id": "east-village-dothan-landUseMapChange",
+      "caseId": "east-village-dothan",
+      "field": "landUseMapChange",
+      "value": "RP (Rural Places) to CC (Commerce Center)",
+      "unit": null,
+      "sourceId": "draft-zoning-2026-07-07",
+      "locator": "Page 1, Agenda, East Village Dothan item, Future Land Use Map amendment",
+      "state": "proposed",
+      "notes": "Requested amendment to the Future Land Use Map.",
       "version": 1
     },
     {
@@ -196,6 +220,15 @@
         "east-village-dothan-resourceUse"
       ],
       "note": "Initial index. Source comparison by Codex; owner review pending."
+    },
+    {
+      "date": "2026-11-25",
+      "version": 1,
+      "claimIds": [
+        "east-village-dothan-lotSize",
+        "east-village-dothan-landUseMapChange"
+      ],
+      "note": "Reopened the original county PDF and matched the existing fields. Added the draft-reported lot size and requested Future Land Use Map change. Owner review pending."
     }
   ]
 }

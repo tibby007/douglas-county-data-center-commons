@@ -70,7 +70,7 @@ function DownloadCard() {
       <button className="button outline" onClick={() => download('csv')}><ArrowDown size={16} /> CSV</button>
       <button className="button outline" onClick={() => download('json')}><ArrowDown size={16} /> JSON</button>
     </div>
-    <p className="small">Index license pending approval. County documents and other third-party material are excluded.</p>
+    <p className="small">Original index contributions are available under <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. County documents and other third-party materials are excluded.</p>
   </section>
 }
 
@@ -133,7 +133,7 @@ function Browse() {
           return <article className="record-card" key={record.id}>
             <div className="record-top">
               <span className="record-type"><FileText size={17} /> {source.recordType}</span>
-              <span className="badge"><span className="status-dot" /> {claims.listing.value}</span>
+              <div className="case-status"><span className="badge"><span className="status-dot" /> {claims.listing.value}</span><span>No outcome verified</span></div>
             </div>
             <h3><a href={`#case/${record.id}`}>{claims.applicant.value}</a></h3>
             <p className="proposal">{claims.proposal.value} proposal</p>
@@ -169,7 +169,7 @@ function CaseDetail({ record, openEvidence }: { record: typeof index.cases[numbe
   return <>
     <a className="text-link back" href="#records"><ArrowLeft size={17} /> Browse records</a>
     <div className="case-head">
-      <div className="case-status"><span className="badge"><span className="status-dot" /> {claims.listing.value}</span><span>Outcome unverified</span></div>
+      <div className="case-status"><span className="badge"><span className="status-dot" /> {claims.listing.value}</span><span>No outcome verified</span></div>
       <h1 tabIndex={-1}>{claims.applicant.value}</h1>
       <p>{claims.proposal.value} proposal {cite(claims.proposal.locator!)}</p>
       <div className="tags">{(claims.identifiers.value as string[]).map(id => <span key={id}>{id}</span>)}{cite(claims.identifiers.locator!)}</div>
@@ -181,6 +181,8 @@ function CaseDetail({ record, openEvidence }: { record: typeof index.cases[numbe
           <p>The draft agenda lists three requests for this proposal. {cite(claims.requests.locator!)}</p>
           <ul>{(claims.requests.value as string[]).map(request => <li key={request}>{request}</li>)}</ul>
           <dl className="source-fields">
+            <div><dt>Lot size in the draft</dt><dd>{claims.lotSize.value} {claims.lotSize.unit} {cite(claims.lotSize.locator!)}</dd></div>
+            <div><dt>Requested land-use map change</dt><dd>{claims.landUseMapChange.value} {cite(claims.landUseMapChange.locator!)}</dd></div>
             <div><dt>Location in the agenda</dt><dd>{claims.location.value} {cite(claims.location.locator!)}</dd></div>
             <div><dt>Planning record jurisdiction</dt><dd>{claims.jurisdiction.value} {cite(claims.jurisdiction.locator!)}<p className="small">{claims.jurisdiction.notes}</p></dd></div>
           </dl>
@@ -232,7 +234,7 @@ function Method() {
       <h2>How to read the labels</h2>
       <dl className="method-definitions">
         <dt>Draft</dt><dd>The issuer labels the agenda a draft. A listing establishes that an item appeared in the draft.</dd>
-        <dt>Source matched</dt><dd>Codex compared the entry with the accessible source text on {date(source.reviewDate)}. Project-owner review is pending.</dd>
+        <dt>Source matched</dt><dd>Codex reopened the original county PDF and compared the index with page 1 on {date(source.reviewDate)}. Project-owner review is pending.</dd>
         <dt>Proposed</dt><dd>The document describes a request or forecast. The requested outcome remains unverified.</dd>
         <dt>Unknown</dt><dd>Information was either absent from the source reviewed or has yet to be researched. The index records which applies.</dd>
       </dl>
@@ -240,7 +242,7 @@ function Method() {
     <section className="panel">
       <h2>Corrections &amp; reuse</h2>
       <p>To prepare a correction, note the case ID, the field, an official source URL and its page or item. The repository’s contribution guide explains review and how corrections are recorded. This demo collects no submissions.</p>
-      <p>Downloads contain the project’s factual index and provenance. The proposed index license awaits owner approval. County PDFs and other third-party material stay with their issuers.</p>
+      <p>Downloads contain the project’s factual index and provenance. Original index contributions are dedicated under <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> where the project holds rights. The original guide and methodology are licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. County PDFs and other third-party materials stay with their issuers.</p>
     </section>
   </div>
 }

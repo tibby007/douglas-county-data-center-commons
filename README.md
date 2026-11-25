@@ -6,6 +6,8 @@ The pilot follows East Village Dothan, LLC through one county draft zoning agend
 
 ## Open the demo
 
+[Open the live demo](https://tibby007.github.io/douglas-county-data-center-commons/).
+
 Open `dist/douglas-county-commons-demo.html` in a browser after running `npm run build:portable`. The interface and downloads work offline. Opening the original county PDF requires an internet connection.
 
 For local development, install Node.js 24 LTS and npm 11, then run:
@@ -36,8 +38,14 @@ The portable build writes `dist/douglas-county-commons-demo.html`. Browser tests
 | [tests/](tests/) | Data checks and Chromium acceptance tests using synthetic inputs only where needed |
 | [docs/DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md) | Field definitions, evidence states, and export formats |
 | [docs/SOURCES.md](docs/SOURCES.md) | Source review and link-only reuse register |
-| [DATA_RIGHTS.md](DATA_RIGHTS.md) | Rights, exclusions, and license proposals |
+| [DATA_RIGHTS.md](DATA_RIGHTS.md) | License scope and third-party exclusions |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | Correction and review workflow |
 | [BUILD_LOG.md](BUILD_LOG.md) | AI assistance, user direction, and review limits |
 
-This is a prototype. County agencies maintain the official records. The project owner’s source review and decisions on licensing and public release are pending.
+## Licenses
+
+- Original project code is available under [Apache-2.0](LICENSE).
+- Original factual index contributions are dedicated under [CC0 1.0](LICENSE-DATA) where the project holds rights.
+- Original guide and methodology are available under [CC BY 4.0](LICENSE-METHOD). Attribute Douglas County Data Center Commons and link to this repository.
+
+See [Data rights](DATA_RIGHTS.md) for the scope and third-party exclusions. The project owner’s independent source review is pending.

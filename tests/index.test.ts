@@ -51,11 +51,23 @@ test('CSV protects formula prefixes and quotes delimiters and newlines', () => {
 test('both exports include coverage, original sources, review and reuse details', () => {
   const csv = makeCsv(index)
   const output = JSON.parse(makeJson(index))
-  for (const expected of ['coverage_date', '2026-11-23', index.sources[0].url, 'owner_review', 'third_party_exclusions', 'Link only']) {
+  for (const expected of ['coverage_date', index.coverageDate, 'CC0-1.0', index.sources[0].url, 'owner_review', 'third_party_exclusions', 'Link only']) {
     assert.ok(csv.includes(expected), expected)
   }
   assert.equal(output.coverageDate, index.coverageDate)
   assert.equal(output.claimRows[0].source_url, index.sources[0].url)
   assert.ok(output.claimRows.every(row => row.index_license && row.third_party_exclusions))
   assert.equal(output.claimRows.find(row => row.field === 'resourceUse').value, null)
+})
+
+test('lot size and land-use amendment are separately attributed to the draft', () => {
+  const size = index.claims.find(claim => claim.field === 'lotSize')
+  const change = index.claims.find(claim => claim.field === 'landUseMapChange')
+  assert.deepEqual([size?.value, size?.unit, size?.state], [703, 'acres', 'documented'])
+  assert.equal(change?.value, 'RP (Rural Places) to CC (Commerce Center)')
+  assert.equal(change?.state, 'proposed')
+  for (const claim of [size, change]) {
+    assert.equal(claim?.sourceId, index.sources[0].id)
+    assert.match(claim?.locator ?? '', /^Page 1, Agenda/)
+  }
 })

@@ -1,6 +1,6 @@
 # Source and reuse register
 
-Rechecked on November 23, 2026 via web retrieval. The text of page 1 of the original county draft PDF and the county board’s link label were compared against the index. The PDF text provides the material case facts. Owner review is pending. Portal pages blocked or unavailable to the retrieval tool are recorded accordingly. No requests were submitted.
+The source links were checked on November 23, 2026. On November 25, 2026, Codex downloaded the original county draft PDF directly and compared the index against page 1, including the memo date, scheduled meeting date, case identifiers, applicant, requests, location, and reported lot size. Owner review is pending. Portal pages blocked or unavailable to the retrieval tool are recorded accordingly. No requests were submitted.
 
 | Source | Evidence and reuse decision |
 | --- | --- |
