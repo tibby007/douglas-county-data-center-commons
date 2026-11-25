@@ -1,0 +1,32 @@
+{
+  "name": "douglas-county-data-center-commons",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && node scripts/validate.ts && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test --test-isolation=none tests/*.test.ts",
+    "test:browser": "npm run build:portable && node tests/browser.mjs",
+    "build:portable": "npm run build && vite build --mode portable && node scripts/portable.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/bricolage-grotesque": "5.3.0",
+    "@fontsource-variable/manrope": "5.3.0",
+    "lucide-react": "1.78.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "axe-core": "4.14.1",
+    "playwright-core": "1.65.1",
+    "typescript": "5.9.3",
+    "vite": "8.3.8"
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "coverageDate": "2026-11-23",
+  "scope": "One Douglas County planning case and one draft source.",
+  "licenseStatus": "Proposed CC0-1.0 for original index contributions only, pending owner approval. No dedication is made by this export.",
+  "thirdPartyExclusions": "County documents, logos and other third-party material are excluded.",
+  "cases": [
+    {
+      "id": "east-village-dothan"
+    }
+  ],
+  "sources": [
+    {
+      "id": "draft-zoning-2026-07-07",
+      "title": "MEMORANDUM \u2014 Meeting Scheduled for Tuesday, July 7, 2026",
+      "listingTitle": "July 7, 2026 Draft Agenda (Zoning)",
+      "issuer": "Douglas County Planning & Zoning Board",
+      "url": "https://douglascountyga.gov/DocumentCenter/View/14622/DRAFT-7-7-2026-Zoning-Agenda",
+      "listingUrl": "https://douglascountyga.gov/292/Planning-Zoning-Board",
+      "documentDate": "2026-06-02",
+      "meetingDate": "2026-07-07",
+      "retrievedAt": "2026-11-23",
+      "status": "draft",
+      "recordType": "Zoning agenda",
+      "reviewState": "source_matched",
+      "reviewer": "Codex (AI-assisted source comparison)",
+      "reviewDate": "2026-11-23",
+      "ownerReview": "pending",
+      "reuseNotes": "Link only. Third-party PDF excluded from downloads and any project license."
+    }
+  ],
+  "events": [
+    {
+      "id": "memo-dated",
+      "caseId": "east-village-dothan",
+      "sourceId": "draft-zoning-2026-07-07",
+      "date": "2026-06-02",
+      "kind": "document",
+      "label": "Draft memorandum dated",
+      "locator": "Page 1, memorandum DATE line"
+    },
+    {
+      "id": "meeting-listed",
+      "caseId": "east-village-dothan",
+      "sourceId": "draft-zoning-2026-07-07",
+      "date": "2026-07-07",
+      "kind": "scheduled",
+      "label": "Meeting date listed in draft",
+      "locator": "Page 1, memorandum RE line"
+    }
+  ],
+  "claims": [
+    {
+      "id": "east-village-dothan-applicant",
+      "caseId": "east-village-dothan",
+      "field": "applicant",
+      "value": "East Village Dothan, LLC",
+      "unit": null,
+      "sourceId": "draft-zoning-2026-07-07",
+      "locator": "Page 1, Agenda, East Village Dothan item",
+      "state": "documented",
+      "notes": "",
+      "version": 1
+    },
+    {
+      "id": "east-village-dothan-identifiers",
+      "caseId": "east-village-dothan",
+      "field": "identifiers",
+      "value": [
+        "M2026-01",
+        "Z2026-56",
+        "Z2026-57"
+      ],
+      "unit": null,
+      "sourceId": "draft-zoning-2026-07-07",
+      "locator": "Page 1, Agenda, East Village Dothan item",
+      "state": "documented",
+      "notes": "",
+      "version": 1
+    },
+    {
+      "id": "east-village-dothan-proposal",
+      "caseId": "east-village-dothan",
+      "field": "proposal",
+      "value": "Data center and substation",
+      "unit": null,
+      "sourceId": "draft-zoning-2026-07-07",
+      "locator": "Page 1, Agenda, East Village Dothan item",
+      "state": "proposed",
+      "notes": "",
+      "version": 1
+    },
+    {
+      "id": "east-village-dothan-requests",
+      "caseId": "east-village-dothan",
+      "field": "requests",
+      "value": [
+        "Amend the Future Land Use Map",
+        "Rezone the site as a planned unit development",
+        "Obtain a special use permit"
+      ],
+      "unit": null,
+      "sourceId": "draft-zoning-2026-07-07",
+      "locator": "Page 1, Agenda, East Village Dothan item",
+      "state": "proposed",
+      "notes": "",
+      "version": 1
+    },
+    {
+      "id": "east-village-dothan-location",
+      "caseId": "east-village-dothan",
+      "field": "location",
+      "value": "Poole, East and West Tyson Roads, Villa Rica, GA 30180",
+      "unit": null,
+      "sourceId": "draft-zoning-2026-07-07",
+      "locator": "Page 1, Agenda, East Village Dothan item",
+      "state": "documented",
+      "notes": "Road and postal locality text as listed. No parcel boundaries or municipal authority inferred.",
+      "version": 1
+    },
+    {
+      "id": "east-village-dothan-jurisdiction",
+      "caseId": "east-village-dothan",
+      "field": "jurisdiction",
+      "value": "Douglas County, Georgia",
+      "unit": null,
+      "sourceId": "draft-zoning-2026-07-07",
+      "locator": "Page 1, memo heading and Agenda item; official county board listing",
+      "state": "documented",
+      "notes": "Jurisdiction of this county planning record, based on the issuing body. Parcel-level authority has not been determined.",
+      "version": 1
+    },
+    {
+      "id": "east-village-dothan-listing",
+      "caseId": "east-village-dothan",
+      "field": "listing",
+      "value": "Listed in draft agenda",
+      "unit": null,
+      "sourceId": "draft-zoning-2026-07-07",
+      "locator": "Page 1, Agenda, East Village Dothan item",
+      "state": "documented",
+      "notes": "",
+      "version": 1
+    },
+    {
+      "id": "east-village-dothan-decision",
+      "caseId": "east-village-dothan",
+      "field": "decision",
+      "value": null,
+      "unit": null,
+      "sourceId": "draft-zoning-2026-07-07",
+      "locator": "Page 1, Agenda, East Village Dothan item",
+      "state": "not_found",
+      "notes": "The only case record reviewed is a draft agenda. It contains no final decision.",
+      "version": 1
+    },
+    {
+      "id": "east-village-dothan-permits",
+      "caseId": "east-village-dothan",
+      "field": "permits",
+      "value": null,
+      "unit": null,
+      "sourceId": "draft-zoning-2026-07-07",
+      "locator": "Page 1, Agenda, East Village Dothan item",
+      "state": "not_researched",
+      "notes": "The draft lists a special use permit request. Issued permits have not been checked.",
+      "version": 1
+    },
+    {
+      "id": "east-village-dothan-resourceUse",
+      "caseId": "east-village-dothan",
+      "field": "resourceUse",
+      "value": null,
+      "unit": null,
+      "sourceId": "draft-zoning-2026-07-07",
+      "locator": "Page 1, Agenda, East Village Dothan item",
+      "state": "not_researched",
+      "notes": "Measured water and energy use have not been researched.",
+      "version": 1
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-11-23",
+      "version": 1,
+      "claimIds": [
+        "east-village-dothan-applicant",
+        "east-village-dothan-identifiers",
+        "east-village-dothan-proposal",
+        "east-village-dothan-requests",
+        "east-village-dothan-location",
+        "east-village-dothan-jurisdiction",
+        "east-village-dothan-listing",
+        "east-village-dothan-decision",
+        "east-village-dothan-permits",
+        "east-village-dothan-resourceUse"
+      ],
+      "note": "Initial index. Source comparison by Codex; owner review pending."
+    }
+  ]
+}
